@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'fonts';
+@import 'typography';
+
+// ==>
+//
+body {
+	background-color: $body-bg-color;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+a {
+	@include font(1rem, 600, 1, $inactive-color);
+}
+
+input {
+	border-radius: 1rem;
+	background-color: rgba(70, 70, 70, 0.3);
+}
+
+button,
+input[type='button'],
+input[type='submit'] {
+	cursor: pointer;
+}
+
+#content {
+	min-height: 100vh;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 2.75rem 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	@include max-media(992px) {
+		padding: 1rem 0;
+	}
+}
+
+.centeralize {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: calc(1528px + 5rem);
+	padding: 0 2.5rem;
+	margin-right: 230px;
+	margin-left: auto;
+
+	@include max-media(992px) {
+		max-width: 100%;
+		padding: 0 1rem;
+		margin-right: 0;
+	}
+}
