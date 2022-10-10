@@ -1,3 +1,3 @@
-# AvaLand-Vue
+# AvaLand - Music Streamer
 
 ## In development...
